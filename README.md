@@ -10,6 +10,8 @@ Follow steps to learn how to create responsive layout with pure css.  This resou
 - css units, e.g. `vmin`, `vmax`, `vh`, `vw`, `em`, `rem`, `px`, `ch`
 - flexbox
 
-## deploy
+## Deploy
 
-This website is deployed on Netfliy.
+This website is deployed on Github pages by Github action. [Learn how to use.](https://github.com/marketplace/actions/deploy-to-github-pages)  
+
+demo: [site](https://cstnaya.github.io/Conquering-Responsive-Layouts/)
