@@ -1,3 +1,5 @@
+/* 1. setting global style first */
+
 *,
 *::before,
 *::after {
@@ -10,55 +12,19 @@ body {
   font-size: 1.3rem;
 }
 
+/* 2. then setting general components */
+
+img {
+  max-width: 100%;
+}
+
 h1 {
   font-size: 3rem;
+  margin-top: 0;
 }
 
-.container {
-  margin: 0 auto;
-  width: 80%;
-  max-width: 1100px;
-}
-
-.row {
-  display: flex;
-  gap: 2em;
-}
-
-.col {
-  width: 100%;
-  text-align: center;
-}
-
-.col h2 {
-  font-size: 2em;
-}
-
-.title {
-  color: #87629a;
-}
-
-.cta {
-  padding: 3.5em 0;
-}
-
-.cta--dark {
-  background-color: #136c72;
-  color: #fff;
-}
-
-.hero {
-  padding: 100px 0;
-  background-color: #23424a;
-  color: #fff;
-}
-
-.hero__text {
-  width: 60%;
-}
-
-.hero p {
-  margin-bottom: 3em;
+h2 {
+  font-size: 2rem;
 }
 
 .btn {
@@ -75,4 +41,101 @@ h1 {
 .btn:hover,
 .btn:focus {
   opacity: 0.75;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.row {
+  /* display: flex => flex container */
+  display: flex;
+  justify-content: space-between;
+
+  /* can't use yet */
+  /* gap: 100px; */
+}
+
+.col {
+  /* these are now flex items */
+  width: 100%;
+}
+
+.col + .col {
+  margin-left: 30px;
+}
+
+header {
+  background: #136c72;
+  padding: 1em 0;
+}
+
+.nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav__item + .nav__item {
+  margin-left: 1em;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav__link--button {
+  background: #fff;
+  color: #136c72;
+  padding: 0.25em 1em;
+  border-radius: 10em;
+}
+
+.nav__link:hover {
+  opacity: 0.75;
+}
+
+.hero {
+  padding: 100px 0;
+  background-color: #23424a;
+  color: #fff;
+}
+
+.hero__text {
+  width: 62%;
+}
+
+.hero__img {
+  width: 32%;
+  align-self: flex-start;
+}
+
+.hero p {
+  margin-bottom: 3em;
+}
+
+.content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.content__text {
+  width: 62%;
+}
+
+.content__text h2 {
+  color: #136c72;
+}
+
+.content__sidebar {
+  width: 32%;
+  background-color: #136c72;
+  color: #fff;
+  text-align: center;
+  padding: 2em;
 }
